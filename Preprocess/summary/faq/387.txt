@@ -1,0 +1,16 @@
+=== 文章 387 摘要開始 ===
+
+使用玉山WebATM需要以下設備：能上網的電腦、符合PC/SC規格的一代IC讀卡機(無鍵盤)、國內任一銀行發卡的晶片金融卡。
+
+需要以下作業系統：
+- Windows 作業系統：Windows 7 (含)以上版本
+- Mac 作業系統：Mac OS 10.11版本以上
+- Linux 作業系統：64位元之Ubuntu 16.04版及18.04版
+
+需要以下瀏覽器版本：
+- Microsoft IE 9以上
+- Mozilla Firefox 68以上
+- Google Chrome 65以上
+- Safari 10以上
+
+=== 文章 387 摘要結束 ===

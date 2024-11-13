@@ -1,0 +1,5 @@
+=== 文章 487 摘要開始 ===
+
+安裝pcscd套件可以使用Synaptic套件管理程式，搜尋並選取libccid、libpcsc-perl、pcscd、pcsc-tools四個套件進行安裝。
+
+=== 文章 487 摘要結束 ===

@@ -1,0 +1,29 @@
+=== 文章 980 摘要開始 ===
+
+本合併財務報告係依照證券發行人財務報告編製準則及經金管會認可並發布生效之國際會計準則第 34 號 「期中財務報導」 編製。
+本公司所持有之所有權權益百分比：
+- 台積公司於 112 年 3 月 31 日持有 TSMC North America 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Europe B.V. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Japan Limited 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Design Technology Japan, Inc. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Japan 3DIC R&D Center, Inc. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Korea Limited 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Partners, Ltd. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Global Ltd. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有台積電（中國）有限公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有台積電（南京）有限公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有采鈺科技股份有限公司的 68% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Arizona Corporation 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 Japan Advanced Semiconductor Manufacturing, Inc. 公司的 71% 股權。
+- 台積公司於 112 年 3 月 31 日持有 VentureTech Alliance Fund II, L.P. 公司的 98% 股權。
+- 台積公司於 112 年 3 月 31 日持有 VentureTech Alliance Fund III, L.P. 公司的 98% 股權。
+- 台積公司於 112 年 3 月 31 日持有 Emerging Fund L.P. 公司的 99.9% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Partners Development, Inc. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Technology, Inc. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC Design Technology Canada Inc. 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 TSMC WaferTech, LLC 公司的 100% 股權。
+- 台積公司於 112 年 3 月 31 日持有 VTAF III Growth Fund Limited 公司的 100% 股權。
+
+本合併財務報告所採用之其他重大會計判斷、估計及假設不確定性之主要來源與 111 年度合併財務報告相同。
+
+=== 文章 980 摘要結束 ===

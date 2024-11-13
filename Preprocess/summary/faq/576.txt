@@ -1,0 +1,5 @@
+=== 文章 576 摘要開始 ===
+
+為了提升交易資訊安全，將調整TLS加密通訊協定。調整後將不再支援TLS 1.0加密通訊協定、3DES加密演算法和IE 8（含）以下版本瀏覽器。建議更新至IE 9以上版本，或改用Chrome、Firefox等最新版本瀏覽器，並啟用TLS 1.1以上之加密通訊協定。更多詳細教學請參考[說明](https://www.esunbank.com.tw/bank/about/faq/digital/netbank?list=33)。
+
+=== 文章 576 摘要結束 ===
