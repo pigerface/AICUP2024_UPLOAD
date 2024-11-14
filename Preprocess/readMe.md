@@ -1,38 +1,32 @@
-# AIcupPDFtoText.py
+# aicup_pdf_to_text.py
 
 ## Overview
-The `AIcup_pdf_to_text` module is designed to convert PDF files into text, supporting various OCR and text processing methods to ensure accurate document extraction and storage. Key functions include mounting Google Drive, performing OCR, converting PDFs to text, batch processing files, and uploading to the OpenAI API for format cleanup.
+This script processes PDF documents by first attempting direct text extraction using `pdftotext`. If the direct extraction results in insufficient content, it falls back to OCR using `ocrmypdf` to retrieve text from scanned PDFs. Extracted text is then saved in a specified output directory, preserving the original categorization.
 
-### Key Functions
-1. **Google Drive Mounting**
-   - Mounts Google Drive, allowing files to be read from and saved to specified paths.
+## Main Components
+1. **OCR and Text Cleaning Function (`ocr_and_clean_document`)**
+   - Performs OCR on a PDF file if direct extraction fails.
+   - Saves the OCR output to a text file.
 
-2. **OCRmyPDF Installation and Execution**
-   - Installs necessary dependencies for OCR, such as `tesseract-ocr` and `JBIG2 encoder`.
-   - Executes `ocrmypdf` to perform OCR on PDF files, supporting English and Traditional Chinese, and saves the output as a text file.
+2. **PDF Reading Function (`read_pdf_and_save`)**
+   - Reads and extracts text from PDF files using `pdftotext`.
+   - Verifies content length to determine if OCR fallback is necessary.
 
-3. **PDF Text Conversion**
-   - Uses `pdftotext` to convert PDFs to text format, saving the output to a specified location.
-   - If the text length is unusually short, the conversion is deemed unsuccessful and further processed with OCR.
+3. **Folder Processing Function (`process_pdfs_in_folder`)**
+   - Iterates through all PDF files in the specified folder.
+   - Uses direct text extraction as the primary method.
+   - Falls back to OCR if content is too short, indicating extraction failure.
 
-4. **Batch Processing of All PDFs in a Folder**
-   - Iterates through specified folders, performing text conversion or OCR on each PDF file.
-   - Saves results in a designated output folder.
-
-5. **OpenAI API Cleanup and Organization**
-   - Uploads PDFs to the OpenAI API for format reference.
-   - Sends extracted text to OpenAI for format cleanup, fixing OCR-induced formatting issues.
-
-6. **Simple OCR Processing**
-   - Installs `easyocr` for handling inaccurate OCR, using `pdf2image` for image conversion.
-   - Utilizes multithreading to process pages in batches, enhancing efficiency for large files.
+## Special Instructions
+- **Fallback to OCR**: If `pdftotext` fails (producing short content), the script switches to OCR.
+- **Error Handling**: Detailed OCR process logs are displayed, and errors during OCR are captured.
+- **Directory Management**: Automatically creates output folders if they do not exist.
 
 ## Key Features
-- **Supports OCR for Traditional Chinese and English**
-- **Identifies and handles failed PDF-to-text conversions**
-- **Integrates OpenAI API for format correction**
-- **Processes large files using multithreading for improved efficiency**
-- **Batch processes entire folders for time efficiency**
+- **OCR and Direct Extraction Hybrid**: Automatically switches between direct text extraction and OCR based on content length.
+- **Automated Directory Processing**: Handles all PDFs within specified directories.
+- **Structured Output**: Saves extracted text with the original PDF filenames (in `.txt` format) for easy reference.
+
 
 # TBrain.py 
 
@@ -87,3 +81,35 @@ This script generates summaries for articles by utilizing Google's Gemini AI mod
 - **Directory-Based Text File Processing**: Reads text files from the specified reference directory.
 - **Summary Generation**: Creates summaries while preserving the original article IDs.
 - **Error Handling with Retry Mechanism**: Pauses and retries on API errors, with a 10-second delay between retries.
+
+# setup.sh
+
+## Overview
+This bash script sets up an environment for performing OCR on PDF documents using OCRmyPDF and Tesseract OCR. Additionally, it installs dependencies for JBIG2 encoding, which is used by OCRmyPDF for more efficient compression of scanned PDF images.
+
+## Script Steps
+
+1. **System Update**
+   - Updates the package list to ensure all packages are up-to-date.
+
+2. **Install OCRmyPDF and Tesseract OCR**
+   - Installs `ocrmypdf` for PDF OCR processing.
+   - Installs `tesseract-ocr` with support for traditional Chinese (`tesseract-ocr-chi-tra`).
+
+3. **Install JBIG2 Encoder Dependencies**
+   - Installs necessary development tools and libraries required to build and run the JBIG2 encoder.
+
+4. **Clone and Build JBIG2 Encoder**
+   - Clones the JBIG2 encoder repository from GitHub.
+   - Builds and installs the encoder to optimize OCRmyPDF's processing efficiency.
+
+5. **Install Additional Libraries and Tools**
+   - Installs essential development tools like `build-essential`, `libpoppler-cpp-dev`, and other dependencies for handling PDFs and building packages.
+
+6. **Install Python Package for PDF Text Extraction**
+   - Installs the `pdftotext` Python package, enabling direct text extraction from PDFs.
+
+## Key Features
+- **Multi-Language OCR**: Includes support for both English and Traditional Chinese text recognition.
+- **Efficient Compression**: Sets up JBIG2 encoding for optimized PDF compression.
+- **Full Development Environment**: Installs additional libraries to support PDF processing and development tasks.

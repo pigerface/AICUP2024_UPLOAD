@@ -17,6 +17,7 @@ Pillow = "*"
 numpy = "*"
 easyocr = "*"
 tqdm = "*"
+pdftotext = "*"
 
 [dev-packages]
 ipykernel = "*"
